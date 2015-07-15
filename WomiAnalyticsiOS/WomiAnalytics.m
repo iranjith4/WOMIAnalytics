@@ -31,7 +31,7 @@ static WomiAnalytics *sharedDelegate = nil;
 
 - (id) init {
     if (self = [super init]) {
-
+        [self initValues];
     }
     return self;
 }
@@ -242,6 +242,17 @@ static WomiAnalytics *sharedDelegate = nil;
                                                                label:nil          // Event label
                                                                value:nil] build]];    // Event value
         }
+    }
+}
+
+- (void)screenName:(NSString *)screenName{
+    if (isApsalar) {
+        [Apsalar eventWithArgs:screenName,@"screen_event"];
+    }
+    if (isGoogleAnalytics) {
+        id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+        [tracker set:kGAIScreenName value:screenName];
+        [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
     }
 }
 

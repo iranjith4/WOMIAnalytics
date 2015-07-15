@@ -68,4 +68,9 @@
  * NOTE : label and values will be recorded only in Google Analytics
  */
 - (void)eventCustomName:(NSString *)event category:(NSString *)category label:(NSString *)label value:(NSString *)value;
+
+// Screen Capturing
+
+- (void)screenName:(NSString *)screenName;
+
 @end

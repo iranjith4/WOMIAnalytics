@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0EDA98B1B5662210081CCA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA98A1B5662210081CCA4 /* main.m */; };
+		F0EDA98E1B5662210081CCA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA98D1B5662210081CCA4 /* AppDelegate.m */; };
+		F0EDA9911B5662210081CCA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA9901B5662210081CCA4 /* ViewController.m */; };
+		F0EDA9941B5662210081CCA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EDA9921B5662210081CCA4 /* Main.storyboard */; };
+		F0EDA9961B5662210081CCA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EDA9951B5662210081CCA4 /* Images.xcassets */; };
+		F0EDA9991B5662210081CCA4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EDA9971B5662210081CCA4 /* LaunchScreen.xib */; };
+		F0EDA9A51B5662210081CCA4 /* WomiAnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA9A41B5662210081CCA4 /* WomiAnalyticsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0EDA99F1B5662210081CCA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0EDA97D1B5662210081CCA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0EDA9841B5662210081CCA4;
+			remoteInfo = WomiAnalytics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0EDA9851B5662210081CCA4 /* WomiAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomiAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0EDA9891B5662210081CCA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0EDA98A1B5662210081CCA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0EDA98C1B5662210081CCA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0EDA98D1B5662210081CCA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0EDA98F1B5662210081CCA4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F0EDA9901B5662210081CCA4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F0EDA9931B5662210081CCA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0EDA9951B5662210081CCA4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F0EDA9981B5662210081CCA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F0EDA99E1B5662210081CCA4 /* WomiAnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WomiAnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0EDA9A31B5662210081CCA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0EDA9A41B5662210081CCA4 /* WomiAnalyticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WomiAnalyticsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0EDA9821B5662210081CCA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0EDA99B1B5662210081CCA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0EDA97C1B5662210081CCA4 = {
+			isa = PBXGroup;
+			children = (
+				F0EDA9871B5662210081CCA4 /* WomiAnalytics */,
+				F0EDA9A11B5662210081CCA4 /* WomiAnalyticsTests */,
+				F0EDA9861B5662210081CCA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0EDA9861B5662210081CCA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0EDA9851B5662210081CCA4 /* WomiAnalytics.app */,
+				F0EDA99E1B5662210081CCA4 /* WomiAnalyticsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0EDA9871B5662210081CCA4 /* WomiAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				F0EDA98C1B5662210081CCA4 /* AppDelegate.h */,
+				F0EDA98D1B5662210081CCA4 /* AppDelegate.m */,
+				F0EDA98F1B5662210081CCA4 /* ViewController.h */,
+				F0EDA9901B5662210081CCA4 /* ViewController.m */,
+				F0EDA9921B5662210081CCA4 /* Main.storyboard */,
+				F0EDA9951B5662210081CCA4 /* Images.xcassets */,
+				F0EDA9971B5662210081CCA4 /* LaunchScreen.xib */,
+				F0EDA9881B5662210081CCA4 /* Supporting Files */,
+			);
+			path = WomiAnalytics;
+			sourceTree = "<group>";
+		};
+		F0EDA9881B5662210081CCA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0EDA9891B5662210081CCA4 /* Info.plist */,
+				F0EDA98A1B5662210081CCA4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0EDA9A11B5662210081CCA4 /* WomiAnalyticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0EDA9A41B5662210081CCA4 /* WomiAnalyticsTests.m */,
+				F0EDA9A21B5662210081CCA4 /* Supporting Files */,
+			);
+			path = WomiAnalyticsTests;
+			sourceTree = "<group>";
+		};
+		F0EDA9A21B5662210081CCA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0EDA9A31B5662210081CCA4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0EDA9841B5662210081CCA4 /* WomiAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0EDA9A81B5662210081CCA4 /* Build configuration list for PBXNativeTarget "WomiAnalytics" */;
+			buildPhases = (
+				F0EDA9811B5662210081CCA4 /* Sources */,
+				F0EDA9821B5662210081CCA4 /* Frameworks */,
+				F0EDA9831B5662210081CCA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WomiAnalytics;
+			productName = WomiAnalytics;
+			productReference = F0EDA9851B5662210081CCA4 /* WomiAnalytics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0EDA99D1B5662210081CCA4 /* WomiAnalyticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0EDA9AB1B5662210081CCA4 /* Build configuration list for PBXNativeTarget "WomiAnalyticsTests" */;
+			buildPhases = (
+				F0EDA99A1B5662210081CCA4 /* Sources */,
+				F0EDA99B1B5662210081CCA4 /* Frameworks */,
+				F0EDA99C1B5662210081CCA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0EDA9A01B5662210081CCA4 /* PBXTargetDependency */,
+			);
+			name = WomiAnalyticsTests;
+			productName = WomiAnalyticsTests;
+			productReference = F0EDA99E1B5662210081CCA4 /* WomiAnalyticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0EDA97D1B5662210081CCA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = WomiStudios;
+				TargetAttributes = {
+					F0EDA9841B5662210081CCA4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F0EDA99D1B5662210081CCA4 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F0EDA9841B5662210081CCA4;
+					};
+				};
+			};
+			buildConfigurationList = F0EDA9801B5662210081CCA4 /* Build configuration list for PBXProject "WomiAnalytics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0EDA97C1B5662210081CCA4;
+			productRefGroup = F0EDA9861B5662210081CCA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0EDA9841B5662210081CCA4 /* WomiAnalytics */,
+				F0EDA99D1B5662210081CCA4 /* WomiAnalyticsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0EDA9831B5662210081CCA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0EDA9941B5662210081CCA4 /* Main.storyboard in Resources */,
+				F0EDA9991B5662210081CCA4 /* LaunchScreen.xib in Resources */,
+				F0EDA9961B5662210081CCA4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0EDA99C1B5662210081CCA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0EDA9811B5662210081CCA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0EDA9911B5662210081CCA4 /* ViewController.m in Sources */,
+				F0EDA98E1B5662210081CCA4 /* AppDelegate.m in Sources */,
+				F0EDA98B1B5662210081CCA4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0EDA99A1B5662210081CCA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0EDA9A51B5662210081CCA4 /* WomiAnalyticsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0EDA9A01B5662210081CCA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0EDA9841B5662210081CCA4 /* WomiAnalytics */;
+			targetProxy = F0EDA99F1B5662210081CCA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0EDA9921B5662210081CCA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0EDA9931B5662210081CCA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0EDA9971B5662210081CCA4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0EDA9981B5662210081CCA4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0EDA9A61B5662210081CCA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F0EDA9A71B5662210081CCA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0EDA9A91B5662210081CCA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WomiAnalytics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F0EDA9AA1B5662210081CCA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WomiAnalytics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F0EDA9AC1B5662210081CCA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WomiAnalyticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WomiAnalytics.app/WomiAnalytics";
+			};
+			name = Debug;
+		};
+		F0EDA9AD1B5662210081CCA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WomiAnalyticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WomiAnalytics.app/WomiAnalytics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0EDA9801B5662210081CCA4 /* Build configuration list for PBXProject "WomiAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EDA9A61B5662210081CCA4 /* Debug */,
+				F0EDA9A71B5662210081CCA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0EDA9A81B5662210081CCA4 /* Build configuration list for PBXNativeTarget "WomiAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EDA9A91B5662210081CCA4 /* Debug */,
+				F0EDA9AA1B5662210081CCA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F0EDA9AB1B5662210081CCA4 /* Build configuration list for PBXNativeTarget "WomiAnalyticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EDA9AC1B5662210081CCA4 /* Debug */,
+				F0EDA9AD1B5662210081CCA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0EDA97D1B5662210081CCA4 /* Project object */;
+}

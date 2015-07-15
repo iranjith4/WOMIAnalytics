@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A72A1E362117B3F3E645C7BE /* libPods-WomiAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD0BA07410D5334222EACD9 /* libPods-WomiAnalytics.a */; };
 		F0EDA98B1B5662210081CCA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA98A1B5662210081CCA4 /* main.m */; };
 		F0EDA98E1B5662210081CCA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA98D1B5662210081CCA4 /* AppDelegate.m */; };
 		F0EDA9911B5662210081CCA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA9901B5662210081CCA4 /* ViewController.m */; };
@@ -15,6 +16,16 @@
 		F0EDA9991B5662210081CCA4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EDA9971B5662210081CCA4 /* LaunchScreen.xib */; };
 		F0EDA9A51B5662210081CCA4 /* WomiAnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA9A41B5662210081CCA4 /* WomiAnalyticsTests.m */; };
 		F0EDA9B11B5663100081CCA4 /* WomiAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA9B01B56630F0081CCA4 /* WomiAnalytics.m */; };
+		F0EDA9B31B566ACE0081CCA4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0EDA9B21B566ACE0081CCA4 /* Info.plist */; };
+		F0EDA9B51B566AE80081CCA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0EDA9B41B566AE80081CCA4 /* GoogleService-Info.plist */; };
+		F0EDA9BA1B566D0A0081CCA4 /* Apsalar.js in Resources */ = {isa = PBXBuildFile; fileRef = F0EDA9B81B566D0A0081CCA4 /* Apsalar.js */; };
+		F0EDA9BB1B566D0A0081CCA4 /* libApsalar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EDA9B91B566D0A0081CCA4 /* libApsalar.a */; };
+		F0EDA9BD1B566D390081CCA4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EDA9BC1B566D390081CCA4 /* libsqlite3.0.dylib */; };
+		F0EDA9BF1B566D400081CCA4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EDA9BE1B566D400081CCA4 /* SystemConfiguration.framework */; };
+		F0EDA9C11B566D460081CCA4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EDA9C01B566D460081CCA4 /* Security.framework */; };
+		F0EDA9C31B566D4D0081CCA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EDA9C21B566D4D0081CCA4 /* libz.dylib */; };
+		F0EDA9C51B566D540081CCA4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EDA9C41B566D540081CCA4 /* AdSupport.framework */; };
+		F0EDA9C71B566D5A0081CCA4 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EDA9C61B566D5A0081CCA4 /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AD0BA07410D5334222EACD9 /* libPods-WomiAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WomiAnalytics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AA862FFA3058F8FDFA8CF2 /* Pods-WomiAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WomiAnalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WomiAnalytics/Pods-WomiAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
+		D486FFAF31AB28368BE0F4FB /* Pods-WomiAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WomiAnalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-WomiAnalytics/Pods-WomiAnalytics.release.xcconfig"; sourceTree = "<group>"; };
 		F0EDA9851B5662210081CCA4 /* WomiAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomiAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0EDA9891B5662210081CCA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0EDA98A1B5662210081CCA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0EDA98C1B5662210081CCA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0EDA98D1B5662210081CCA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -43,6 +56,17 @@
 		F0EDA9A41B5662210081CCA4 /* WomiAnalyticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WomiAnalyticsTests.m; sourceTree = "<group>"; };
 		F0EDA9AF1B56630F0081CCA4 /* WomiAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WomiAnalytics.h; sourceTree = "<group>"; };
 		F0EDA9B01B56630F0081CCA4 /* WomiAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WomiAnalytics.m; sourceTree = "<group>"; };
+		F0EDA9B21B566ACE0081CCA4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0EDA9B41B566AE80081CCA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0EDA9B71B566D0A0081CCA4 /* Apsalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apsalar.h; sourceTree = "<group>"; };
+		F0EDA9B81B566D0A0081CCA4 /* Apsalar.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Apsalar.js; sourceTree = "<group>"; };
+		F0EDA9B91B566D0A0081CCA4 /* libApsalar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libApsalar.a; sourceTree = "<group>"; };
+		F0EDA9BC1B566D390081CCA4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		F0EDA9BE1B566D400081CCA4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F0EDA9C01B566D460081CCA4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F0EDA9C21B566D4D0081CCA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F0EDA9C41B566D540081CCA4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F0EDA9C61B566D5A0081CCA4 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +74,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0EDA9C71B566D5A0081CCA4 /* iAd.framework in Frameworks */,
+				F0EDA9C51B566D540081CCA4 /* AdSupport.framework in Frameworks */,
+				F0EDA9C31B566D4D0081CCA4 /* libz.dylib in Frameworks */,
+				F0EDA9C11B566D460081CCA4 /* Security.framework in Frameworks */,
+				F0EDA9BF1B566D400081CCA4 /* SystemConfiguration.framework in Frameworks */,
+				F0EDA9BD1B566D390081CCA4 /* libsqlite3.0.dylib in Frameworks */,
+				F0EDA9BB1B566D0A0081CCA4 /* libApsalar.a in Frameworks */,
+				A72A1E362117B3F3E645C7BE /* libPods-WomiAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +95,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AC3F6AE37CDDCD2FB8C0F71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42AA862FFA3058F8FDFA8CF2 /* Pods-WomiAnalytics.debug.xcconfig */,
+				D486FFAF31AB28368BE0F4FB /* Pods-WomiAnalytics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B49A03D4401EB3BF9AE54AD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0EDA9C61B566D5A0081CCA4 /* iAd.framework */,
+				F0EDA9C41B566D540081CCA4 /* AdSupport.framework */,
+				F0EDA9C21B566D4D0081CCA4 /* libz.dylib */,
+				F0EDA9C01B566D460081CCA4 /* Security.framework */,
+				F0EDA9BE1B566D400081CCA4 /* SystemConfiguration.framework */,
+				F0EDA9BC1B566D390081CCA4 /* libsqlite3.0.dylib */,
+				1AD0BA07410D5334222EACD9 /* libPods-WomiAnalytics.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F0EDA97C1B5662210081CCA4 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +125,8 @@
 				F0EDA9871B5662210081CCA4 /* WomiAnalytics */,
 				F0EDA9A11B5662210081CCA4 /* WomiAnalyticsTests */,
 				F0EDA9861B5662210081CCA4 /* Products */,
+				0AC3F6AE37CDDCD2FB8C0F71 /* Pods */,
+				B49A03D4401EB3BF9AE54AD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +142,7 @@
 		F0EDA9871B5662210081CCA4 /* WomiAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				F0EDA9B61B566D0A0081CCA4 /* Apsalar */,
 				F0EDA98C1B5662210081CCA4 /* AppDelegate.h */,
 				F0EDA98D1B5662210081CCA4 /* AppDelegate.m */,
 				F0EDA98F1B5662210081CCA4 /* ViewController.h */,
@@ -100,7 +158,8 @@
 		F0EDA9881B5662210081CCA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F0EDA9891B5662210081CCA4 /* Info.plist */,
+				F0EDA9B41B566AE80081CCA4 /* GoogleService-Info.plist */,
+				F0EDA9B21B566ACE0081CCA4 /* Info.plist */,
 				F0EDA98A1B5662210081CCA4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -132,6 +191,16 @@
 			path = WomiAnalyticsiOS;
 			sourceTree = "<group>";
 		};
+		F0EDA9B61B566D0A0081CCA4 /* Apsalar */ = {
+			isa = PBXGroup;
+			children = (
+				F0EDA9B71B566D0A0081CCA4 /* Apsalar.h */,
+				F0EDA9B81B566D0A0081CCA4 /* Apsalar.js */,
+				F0EDA9B91B566D0A0081CCA4 /* libApsalar.a */,
+			);
+			path = Apsalar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0EDA9A81B5662210081CCA4 /* Build configuration list for PBXNativeTarget "WomiAnalytics" */;
 			buildPhases = (
+				BF04D344A5D4F330981F53D1 /* Check Pods Manifest.lock */,
 				F0EDA9811B5662210081CCA4 /* Sources */,
 				F0EDA9821B5662210081CCA4 /* Frameworks */,
 				F0EDA9831B5662210081CCA4 /* Resources */,
+				4BC63A73D4EE3E4C2F42D238 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,7 +283,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0EDA9B31B566ACE0081CCA4 /* Info.plist in Resources */,
+				F0EDA9BA1B566D0A0081CCA4 /* Apsalar.js in Resources */,
 				F0EDA9941B5662210081CCA4 /* Main.storyboard in Resources */,
+				F0EDA9B51B566AE80081CCA4 /* GoogleService-Info.plist in Resources */,
 				F0EDA9991B5662210081CCA4 /* LaunchScreen.xib in Resources */,
 				F0EDA9961B5662210081CCA4 /* Images.xcassets in Resources */,
 			);
@@ -226,6 +300,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BC63A73D4EE3E4C2F42D238 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WomiAnalytics/Pods-WomiAnalytics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF04D344A5D4F330981F53D1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0EDA9811B5662210081CCA4 /* Sources */ = {
@@ -359,20 +466,30 @@
 		};
 		F0EDA9A91B5662210081CCA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42AA862FFA3058F8FDFA8CF2 /* Pods-WomiAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WomiAnalytics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WomiAnalytics/Apsalar",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		F0EDA9AA1B5662210081CCA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D486FFAF31AB28368BE0F4FB /* Pods-WomiAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WomiAnalytics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WomiAnalytics/Apsalar",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -430,6 +547,7 @@
 				F0EDA9AA1B5662210081CCA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0EDA9AB1B5662210081CCA4 /* Build configuration list for PBXNativeTarget "WomiAnalyticsTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +556,7 @@
 				F0EDA9AD1B5662210081CCA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

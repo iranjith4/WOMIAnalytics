@@ -14,6 +14,7 @@
 		F0EDA9961B5662210081CCA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EDA9951B5662210081CCA4 /* Images.xcassets */; };
 		F0EDA9991B5662210081CCA4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EDA9971B5662210081CCA4 /* LaunchScreen.xib */; };
 		F0EDA9A51B5662210081CCA4 /* WomiAnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA9A41B5662210081CCA4 /* WomiAnalyticsTests.m */; };
+		F0EDA9B11B5663100081CCA4 /* WomiAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA9B01B56630F0081CCA4 /* WomiAnalytics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F0EDA99E1B5662210081CCA4 /* WomiAnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WomiAnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EDA9A31B5662210081CCA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0EDA9A41B5662210081CCA4 /* WomiAnalyticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WomiAnalyticsTests.m; sourceTree = "<group>"; };
+		F0EDA9AF1B56630F0081CCA4 /* WomiAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WomiAnalytics.h; sourceTree = "<group>"; };
+		F0EDA9B01B56630F0081CCA4 /* WomiAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WomiAnalytics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		F0EDA97C1B5662210081CCA4 = {
 			isa = PBXGroup;
 			children = (
+				F0EDA9AE1B5662F90081CCA4 /* WomiAnalyticsiOS */,
 				F0EDA9871B5662210081CCA4 /* WomiAnalytics */,
 				F0EDA9A11B5662210081CCA4 /* WomiAnalyticsTests */,
 				F0EDA9861B5662210081CCA4 /* Products */,
@@ -117,6 +121,15 @@
 				F0EDA9A31B5662210081CCA4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0EDA9AE1B5662F90081CCA4 /* WomiAnalyticsiOS */ = {
+			isa = PBXGroup;
+			children = (
+				F0EDA9AF1B56630F0081CCA4 /* WomiAnalytics.h */,
+				F0EDA9B01B56630F0081CCA4 /* WomiAnalytics.m */,
+			);
+			path = WomiAnalyticsiOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				F0EDA9911B5662210081CCA4 /* ViewController.m in Sources */,
 				F0EDA98E1B5662210081CCA4 /* AppDelegate.m in Sources */,
+				F0EDA9B11B5663100081CCA4 /* WomiAnalytics.m in Sources */,
 				F0EDA98B1B5662210081CCA4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

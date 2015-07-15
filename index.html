@@ -1,34 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>Womi Analytics by iranjith4</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Womi Analytics</h1>
-        <p>WOMI Analytics Class for the WOMI Games - Apsalar and Google Analytics - Useful if you are using Both</p>
+    <section class="page-header">
+      <h1 class="project-name">Womi Analytics</h1>
+      <h2 class="project-tagline">WOMI Analytics Class for the WOMI Games - Apsalar and Google Analytics - Useful if you are using Both</h2>
+      <a href="https://github.com/iranjith4/WOMIAnalytics" class="btn">View on GitHub</a>
+      <a href="https://github.com/iranjith4/WOMIAnalytics/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/iranjith4/WOMIAnalytics/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <p class="view"><a href="https://github.com/iranjith4/WOMIAnalytics">View the Project on GitHub <small>iranjith4/WOMIAnalytics</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/iranjith4/WOMIAnalytics/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/iranjith4/WOMIAnalytics/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/iranjith4/WOMIAnalytics">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
+    <section class="main-content">
+      <h3>
 <a id="womi-analytics-class" class="anchor" href="#womi-analytics-class" aria-hidden="true"><span class="octicon octicon-link"></span></a>WOMI Analytics Class</h3>
 
 <p>This class is build for easily tracking the Analytics events and session very easily without much code. Womi Analytics supports both the Apsalar (Used for Tracking Events) and Google Analytics. Single method to plug in both Analytics.</p>
@@ -61,7 +52,7 @@ NOTE : Even if you are using any one of there, you must configured both in your 
 
 <p>Eg:</p>
 
-<p><code>[WomiAnalytics startGoogleAnalytics];</code></p>
+<p><code>[[WomiAnalytics sharedManager] startGoogleAnalytics];</code></p>
 
 <h4>
 <a id="session-start---google-analytics-with-options" class="anchor" href="#session-start---google-analytics-with-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Session Start - Google Analytics with Options</h4>
@@ -71,7 +62,7 @@ NOTE : Even if you are using any one of there, you must configured both in your 
 
 <p>Eg:</p>
 
-<p><code>[WomiAnalytics startGoogleAnalyticsWithReportExceptions:YES];</code></p>
+<p><code>[[WomiAnalytics sharedManager] startGoogleAnalyticsWithReportExceptions:YES];</code></p>
 
 <h4>
 <a id="session-start----apsalar-session" class="anchor" href="#session-start----apsalar-session" aria-hidden="true"><span class="octicon octicon-link"></span></a>Session Start -  Apsalar Session</h4>
@@ -82,7 +73,7 @@ NOTE : Even if you are using any one of there, you must configured both in your 
 
 <p>Eg:</p>
 
-<p><code>[WomiAnalytics startApsalarWithAPIKey:@"YOUR_KEY" andSecret:@"SECRET"];</code></p>
+<p><code>[[WomiAnalytics sharedManager] startApsalarWithAPIKey:@"YOUR_KEY" andSecret:@"SECRET"];</code></p>
 
 <h4>
 <a id="session-start---apsalar-session-with-java-script" class="anchor" href="#session-start---apsalar-session-with-java-script" aria-hidden="true"><span class="octicon octicon-link"></span></a>Session Start - Apsalar Session with Java Script</h4>
@@ -93,7 +84,7 @@ NOTE : Even if you are using any one of there, you must configured both in your 
 
 <p>Eg:</p>
 
-<p>[WomiAnalytics startApsalarWithAPIKey:@"YOUR_KEY" andSecret:@"SECRET"];`</p>
+<p>[[WomiAnalytics sharedManager] startApsalarWithAPIKey:@"YOUR_KEY" andSecret:@"SECRET"];`</p>
 
 <h4>
 <a id="basic-event-tracking-for-womi-games" class="anchor" href="#basic-event-tracking-for-womi-games" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Event Tracking for Womi Games</h4>
@@ -120,9 +111,9 @@ NOTE : Even if you are using any one of there, you must configured both in your 
 
 <p>Eg:</p>
 
-<p><code>[WomiAnalytics eventAppOpen];</code></p>
+<p><code>[[WomiAnalytics sharedManager] eventAppOpen];</code></p>
 
-<p><code>[WomiAnalytics eventHighScoreBonusWithScore:@"256"];</code></p>
+<p><code>[[WomiAnalytics sharedManager] eventHighScoreBonusWithScore:@"256"];</code></p>
 
 <h4>
 <a id="custom-event-tracking" class="anchor" href="#custom-event-tracking" aria-hidden="true"><span class="octicon octicon-link"></span></a>Custom Event Tracking</h4>
@@ -132,7 +123,7 @@ NOTE : Even if you are using any one of there, you must configured both in your 
 
 <p>Eg:</p>
 
-<p><code>[WomiAnalytics eventCustomName:@"tapped_help" category:@"ui_action" label:nil value:nil];</code></p>
+<p><code>[[WomiAnalytics sharedManager] eventCustomName:@"tapped_help" category:@"ui_action" label:nil value:nil];</code></p>
 
 <p>NOTE : Event Name, and Category name is must for this method. Label and Value is optional. </p>
 
@@ -146,14 +137,17 @@ NOTE : Even if you are using any one of there, you must configured both in your 
 
 <p>Eg:</p>
 
-<p><code>[WomiAnalytics screenName:@"Game_Screen"]</code></p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/iranjith4">iranjith4</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+<p><code>[[WomiAnalytics sharedManager] screenName:@"Game_Screen"]</code></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/iranjith4/WOMIAnalytics">Womi Analytics</a> is maintained by <a href="https://github.com/iranjith4">iranjith4</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+    </section>
+
+  
   </body>
 </html>
+

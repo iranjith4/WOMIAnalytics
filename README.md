@@ -19,7 +19,7 @@ Add this method at - (BOOL)application:(UIApplication *)application didFinishLau
 
 Eg:
 
-`[WomiAnalytics startGoogleAnalytics];`
+`[[WomiAnalytics sharedManager] startGoogleAnalytics];`
 
 #### Session Start - Google Analytics with Options
 To start the Google Analytics Session with Exception Reporting Options, add this method instead of above method.
@@ -27,7 +27,7 @@ To start the Google Analytics Session with Exception Reporting Options, add this
 
 Eg:
 
-`[WomiAnalytics startGoogleAnalyticsWithReportExceptions:YES];`
+`[[WomiAnalytics sharedManager] startGoogleAnalyticsWithReportExceptions:YES];`
 
 #### Session Start -  Apsalar Session
 To start the Apsalar Session, add this method at - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -36,7 +36,7 @@ To start the Apsalar Session, add this method at - (void)applicationDidBecomeAct
 
 Eg:
 
-`[WomiAnalytics startApsalarWithAPIKey:@"YOUR_KEY" andSecret:@"SECRET"];`
+`[[WomiAnalytics sharedManager] startApsalarWithAPIKey:@"YOUR_KEY" andSecret:@"SECRET"];`
 
 #### Session Start - Apsalar Session with Java Script
 If you use Java Scripts file in the App, use the following method to start the Apsalar Session. Use this method in - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
@@ -45,7 +45,7 @@ If you use Java Scripts file in the App, use the following method to start the A
 
 Eg:
 
-[WomiAnalytics startApsalarWithAPIKey:@"YOUR_KEY" andSecret:@"SECRET"];`
+[[WomiAnalytics sharedManager] startApsalarWithAPIKey:@"YOUR_KEY" andSecret:@"SECRET"];`
 
 #### Basic Event Tracking for Womi Games 
 
@@ -71,9 +71,9 @@ The events predefined are
 
 Eg:
 
-`[WomiAnalytics eventAppOpen];`
+`[[WomiAnalytics sharedManager] eventAppOpen];`
 
-`[WomiAnalytics eventHighScoreBonusWithScore:@"256"];`
+`[[WomiAnalytics sharedManager] eventHighScoreBonusWithScore:@"256"];`
 
 #### Custom Event Tracking
 
@@ -82,7 +82,7 @@ Other than the basic event for games, custom events can be tracked by using the 
 
 Eg:
 
-`[WomiAnalytics eventCustomName:@"tapped_help" category:@"ui_action" label:nil value:nil];`
+`[[WomiAnalytics sharedManager] eventCustomName:@"tapped_help" category:@"ui_action" label:nil value:nil];`
 
 NOTE : Event Name, and Category name is must for this method. Label and Value is optional. 
 
@@ -94,5 +94,5 @@ To track the screen, pass the name of the screen to this method.
 
 Eg:
 
-`[WomiAnalytics screenName:@"Game_Screen"]`
+`[[WomiAnalytics sharedManager] screenName:@"Game_Screen"]`
 

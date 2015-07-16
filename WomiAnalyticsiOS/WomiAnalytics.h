@@ -36,7 +36,7 @@
 
 /*
  * Start Google Analytics with Options
- * add this at applicationDidFinishLaunchWithOptions
+ * add this at - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
  */
 - (void) startGoogleAnalyticsWithReportExceptions:(BOOL)catchExceptions;
 
@@ -65,7 +65,6 @@
 
 /*
  * Event Name and the Category Name is must. Otheres are optional.
- * NOTE : label and values will be recorded only in Google Analytics
  */
 - (void)eventCustomName:(NSString *)event category:(NSString *)category label:(NSString *)label value:(NSString *)value;
 

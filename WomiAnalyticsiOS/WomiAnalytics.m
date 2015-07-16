@@ -227,8 +227,18 @@ static WomiAnalytics *sharedDelegate = nil;
 -(void)eventCustomName:(NSString *)event category:(NSString *)category label:(NSString *)label value:(NSString *)value{
     if (isApsalar) {
         if (event != nil && category != nil) {
+            NSString *labelTemp = @"";
+            NSString *valueTemp = @"";
+            if (label != nil) {
+                labelTemp = label;
+            }
+            if (value != nil) {
+                valueTemp = value;
+            }
             NSDictionary *dict = @{
-                                   @"category" : category
+                                   @"category" : category,
+                                   @"label" : labelTemp,
+                                   @"value" : valueTemp
                                    };
             [Apsalar event:event withArgs:dict];
         }
@@ -239,8 +249,8 @@ static WomiAnalytics *sharedDelegate = nil;
         id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
         [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"appsaholic_action"     // Event category (required)
                                                               action:@"portal_launch"  // Event action (required)
-                                                               label:nil          // Event label
-                                                               value:nil] build]];    // Event value
+                                                               label:label          // Event label
+                                                               value:[NSNumber numberWithInteger:[value integerValue]]] build]];    // Event value
         }
     }
 }

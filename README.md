@@ -38,6 +38,13 @@ Eg:
 
 `[[WomiAnalytics sharedManager] startApsalarWithAPIKey:@"YOUR_KEY" andSecret:@"SECRET"];`
 
+#### Session Start -  Flurry Session
+To start the Flurry Session, add this method at- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+`- (void) startFlurryWithAPIKey:(NSString *)apiKey;`
+
+Eg:
+
+`[[WomiAnalytics sharedManager] startFlurryWithAPIKey:@"YOUR_KEY"];`
 #### Session Start - Apsalar Session with Java Script
 If you use Java Scripts file in the App, use the following method to start the Apsalar Session. Use this method in - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 

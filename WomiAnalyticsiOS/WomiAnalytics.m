@@ -11,6 +11,7 @@
 @implementation WomiAnalytics{
     BOOL isApsalar;
     BOOL isGoogleAnalytics;
+    BOOL isFlurry;
 }
 
 static WomiAnalytics *sharedDelegate = nil;
@@ -75,6 +76,13 @@ static WomiAnalytics *sharedDelegate = nil;
     gai.trackUncaughtExceptions = catchExceptions;  // report uncaught exceptions
 }
 
+#pragma mark - Flurry Analytics
+
+- (void)startFlurryWithAPIKey:(NSString *)apiKey{
+    isFlurry = YES;
+    [Flurry startSession:apiKey];
+}
+
 
 #pragma mark - Event Tracking
 
@@ -92,6 +100,9 @@ static WomiAnalytics *sharedDelegate = nil;
                                                                label:nil          // Event label
                                                                value:nil] build]];    // Event value
     }
+    if (isFlurry) {
+        [Flurry logEvent:@"app_open"];
+    }
 }
 
 -(void)eventAppPopup{
@@ -107,6 +118,9 @@ static WomiAnalytics *sharedDelegate = nil;
                                                               action:@"app_popup"  // Event action (required)
                                                                label:nil          // Event label
                                                                value:nil] build]];    // Event value
+    }
+    if (isFlurry) {
+        [Flurry logEvent:@"app_popup"];
     }
 }
 
@@ -124,6 +138,9 @@ static WomiAnalytics *sharedDelegate = nil;
                                                                label:nil          // Event label
                                                                value:nil] build]];    // Event value
     }
+    if (isFlurry) {
+        [Flurry logEvent:@"daily_app_bonus"];
+    }
 }
 
 -(void)eventGameComplete{
@@ -140,13 +157,16 @@ static WomiAnalytics *sharedDelegate = nil;
                                                                label:nil          // Event label
                                                                value:nil] build]];    // Event value
     }
+    if (isFlurry) {
+        [Flurry logEvent:@"game_complete"];
+    }
 }
 
 -(void)eventGameCompleteWithScore:(NSString *)score{
+    NSDictionary *dict = @{
+                           @"score" : score
+                           };
     if (isApsalar) {
-        NSDictionary *dict = @{
-                               @"score" : score
-                               };
         [Apsalar event:@"game_complete" withArgs:dict];
     }
     if (isGoogleAnalytics) {
@@ -156,6 +176,9 @@ static WomiAnalytics *sharedDelegate = nil;
                                                               action:@"game_complete"  // Event action (required)
                                                                label:nil          // Event label
                                                                value:[NSNumber numberWithInteger:[score integerValue]]] build]];    // Event value
+    }
+    if (isFlurry) {
+        [Flurry logEvent:@"game_complete" withParameters:dict];
     }
 }
 
@@ -173,6 +196,9 @@ static WomiAnalytics *sharedDelegate = nil;
                                                                label:nil          // Event label
                                                                value:nil] build]];    // Event value
     }
+    if (isFlurry) {
+        [Flurry logEvent:@"game_starts"];
+    }
 }
 
 -(void)eventHighScoreBonus{
@@ -189,13 +215,17 @@ static WomiAnalytics *sharedDelegate = nil;
                                                                label:nil          // Event label
                                                                value:nil] build]];    // Event value
     }
+    
+    if (isFlurry) {
+        [Flurry logEvent:@"highscore_app_bonus"];
+    }
 }
 
 - (void)eventHighScoreBonusWithScore:(NSString *)score{
+    NSDictionary *dict = @{
+                           @"score" : score
+                           };
     if (isApsalar) {
-        NSDictionary *dict = @{
-                               @"score" : score
-                               };
         [Apsalar event:@"highscore_app_bonus" withArgs:dict];
     }
     if (isGoogleAnalytics) {
@@ -205,6 +235,10 @@ static WomiAnalytics *sharedDelegate = nil;
                                                               action:@"highscore_app_bonus"  // Event action (required)
                                                                label:nil          // Event label
                                                                value:[NSNumber numberWithInteger:[score integerValue]]] build]];    // Event value
+    }
+    
+    if (isFlurry) {
+        [Flurry logEvent:@"highscore_app_bonus" withParameters:dict];
     }
 }
 
@@ -222,24 +256,30 @@ static WomiAnalytics *sharedDelegate = nil;
                                                                label:nil          // Event label
                                                                value:nil] build]];    // Event value
     }
+    
+    if (isFlurry) {
+        [Flurry logEvent:@"portal_launch"];
+    }
 }
 
 -(void)eventCustomName:(NSString *)event category:(NSString *)category label:(NSString *)label value:(NSString *)value{
+    
+    NSString *labelTemp = @"";
+    NSString *valueTemp = @"";
+    if (label != nil) {
+        labelTemp = label;
+    }
+    if (value != nil) {
+        valueTemp = value;
+    }
+    NSDictionary *dict = @{
+                           @"category" : category,
+                           @"label" : labelTemp,
+                           @"value" : valueTemp
+                           };
+    
     if (isApsalar) {
         if (event != nil && category != nil) {
-            NSString *labelTemp = @"";
-            NSString *valueTemp = @"";
-            if (label != nil) {
-                labelTemp = label;
-            }
-            if (value != nil) {
-                valueTemp = value;
-            }
-            NSDictionary *dict = @{
-                                   @"category" : category,
-                                   @"label" : labelTemp,
-                                   @"value" : valueTemp
-                                   };
             [Apsalar event:event withArgs:dict];
         }
     }
@@ -247,11 +287,15 @@ static WomiAnalytics *sharedDelegate = nil;
     if (isGoogleAnalytics) {
         if (event != nil && category != nil) {
         id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"appsaholic_action"     // Event category (required)
-                                                              action:@"portal_launch"  // Event action (required)
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:category     // Event category (required)
+                                                              action:event  // Event action (required)
                                                                label:label          // Event label
                                                                value:[NSNumber numberWithInteger:[value integerValue]]] build]];    // Event value
         }
+    }
+    
+    if (isFlurry) {
+        [Flurry logEvent:event withParameters:dict];
     }
 }
 
@@ -263,6 +307,12 @@ static WomiAnalytics *sharedDelegate = nil;
         id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
         [tracker set:kGAIScreenName value:screenName];
         [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
+    }
+    if (isFlurry) {
+        NSDictionary *dict = @{
+                               @"screen_name" : screenName
+                               };
+        [Flurry logEvent:@"screen_event" withParameters:dict];
     }
 }
 

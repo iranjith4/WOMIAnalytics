@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Apsalar.h"
+#import "Flurry.h"
 #import <Google/Analytics.h>
 
 @interface WomiAnalytics : NSObject
@@ -39,6 +40,12 @@
  * add this at - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
  */
 - (void) startGoogleAnalyticsWithReportExceptions:(BOOL)catchExceptions;
+
+/*
+ * Start Flurry Analytics
+ * add this at - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+ */
+- (void)startFlurryWithAPIKey:(NSString *)apiKey;
 
 
 // Game Events - Womi Studios

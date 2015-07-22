@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A72A1E362117B3F3E645C7BE /* libPods-WomiAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD0BA07410D5334222EACD9 /* libPods-WomiAnalytics.a */; };
+		F09A71041B5F7E190084681B /* libFlurry_6.5.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F09A71031B5F7E190084681B /* libFlurry_6.5.0.a */; };
 		F0EDA98B1B5662210081CCA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA98A1B5662210081CCA4 /* main.m */; };
 		F0EDA98E1B5662210081CCA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA98D1B5662210081CCA4 /* AppDelegate.m */; };
 		F0EDA9911B5662210081CCA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EDA9901B5662210081CCA4 /* ViewController.m */; };
@@ -42,6 +43,9 @@
 		1AD0BA07410D5334222EACD9 /* libPods-WomiAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WomiAnalytics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AA862FFA3058F8FDFA8CF2 /* Pods-WomiAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WomiAnalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WomiAnalytics/Pods-WomiAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 		D486FFAF31AB28368BE0F4FB /* Pods-WomiAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WomiAnalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-WomiAnalytics/Pods-WomiAnalytics.release.xcconfig"; sourceTree = "<group>"; };
+		F09A71011B5F7E190084681B /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		F09A71021B5F7E190084681B /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
+		F09A71031B5F7E190084681B /* libFlurry_6.5.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.5.0.a; sourceTree = "<group>"; };
 		F0EDA9851B5662210081CCA4 /* WomiAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomiAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EDA98A1B5662210081CCA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0EDA98C1B5662210081CCA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 				F0EDA9BF1B566D400081CCA4 /* SystemConfiguration.framework in Frameworks */,
 				F0EDA9BD1B566D390081CCA4 /* libsqlite3.0.dylib in Frameworks */,
 				F0EDA9BB1B566D0A0081CCA4 /* libApsalar.a in Frameworks */,
+				F09A71041B5F7E190084681B /* libFlurry_6.5.0.a in Frameworks */,
 				A72A1E362117B3F3E645C7BE /* libPods-WomiAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +123,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F09A71001B5F7E190084681B /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				F09A71011B5F7E190084681B /* Flurry.h */,
+				F09A71021B5F7E190084681B /* FlurryWatch.h */,
+				F09A71031B5F7E190084681B /* libFlurry_6.5.0.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
 		F0EDA97C1B5662210081CCA4 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +157,7 @@
 		F0EDA9871B5662210081CCA4 /* WomiAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				F09A71001B5F7E190084681B /* Flurry */,
 				F0EDA9B61B566D0A0081CCA4 /* Apsalar */,
 				F0EDA98C1B5662210081CCA4 /* AppDelegate.h */,
 				F0EDA98D1B5662210081CCA4 /* AppDelegate.m */,
@@ -474,6 +490,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WomiAnalytics/Apsalar",
+					"$(PROJECT_DIR)/WomiAnalytics/Flurry",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -489,6 +506,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WomiAnalytics/Apsalar",
+					"$(PROJECT_DIR)/WomiAnalytics/Flurry",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

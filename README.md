@@ -1,10 +1,10 @@
 ### WOMI Analytics Class
-This class is build for easily tracking the Analytics events and session very easily without much code. Womi Analytics supports both the Apsalar (Used for Tracking Events) and Google Analytics. Single method to plug in both Analytics.
+This class is build for easily tracking the Analytics events and session very easily without much code. Womi Analytics supports Apsalar (Used for Tracking Events),Google Analytics and Yahoo's Flurry. Single method to plug in all Analytics.
 
 ### INTEGRATION
 #### STEP 1:
-You must have both the Apsalar and Google Analytics SDK configured in your project. You can configure Apsalar from tutor [here](http://support.apsalar.com/customer/portal/articles/717510-integrating-the-ios-sdk) and Google Analytics SDK from the tutor [here](https://developers.google.com/analytics/devguides/collection/ios/v3/?configured).
-NOTE : Even if you are using any one of there, you must configured both in your project.
+You must have all the Apsalar , Google Analytics SDK and Flurry SDK configured in your project. You can configure Apsalar from tutor [here](http://support.apsalar.com/customer/portal/articles/717510-integrating-the-ios-sdk) and Google Analytics SDK from the tutor [here](https://developers.google.com/analytics/devguides/collection/ios/v3/?configured) and Flurry [here](https://dev.flurry.com/createProjectSelectPlatform.do).
+NOTE : Even if you are using any one of there, you must configured all SDK in your project.
 
 #### STEP 2:
 Once You configured, Download the Project on GitHub and  Copy the WomiAnalyticsiOS into your Project.

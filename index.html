@@ -76,6 +76,16 @@ NOTE : Even if you are using any one of there, you must configured all SDK in yo
 <p><code>[[WomiAnalytics sharedManager] startApsalarWithAPIKey:@"YOUR_KEY" andSecret:@"SECRET"];</code></p>
 
 <h4>
+<a id="session-start----flurry-session" class="anchor" href="#session-start----flurry-session" aria-hidden="true"><span class="octicon octicon-link"></span></a>Session Start -  Flurry Session</h4>
+
+<p>To start the Flurry Session, add this method at- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+<code>- (void) startFlurryWithAPIKey:(NSString *)apiKey;</code></p>
+
+<p>Eg:</p>
+
+<p><code>[[WomiAnalytics sharedManager] startFlurryWithAPIKey:@"YOUR_KEY"];</code></p>
+
+<h4>
 <a id="session-start---apsalar-session-with-java-script" class="anchor" href="#session-start---apsalar-session-with-java-script" aria-hidden="true"><span class="octicon octicon-link"></span></a>Session Start - Apsalar Session with Java Script</h4>
 
 <p>If you use Java Scripts file in the App, use the following method to start the Apsalar Session. Use this method in - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation</p>
